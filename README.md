@@ -52,6 +52,5 @@ The app follows an Agentic Retrieval-Augmented Generation (RAG) pattern. Unlike 
 **Identity & Access Management (IAM):** Uses least-privilege principles, allowing the Cloud Run service account to access only the necessary secrets and storage buckets.
 
 **Environment Isolation:** Differentiates between build-time variables and runtime secrets to maintain a secure deployment pipeline.
-
----  
-Developed for the PromptWars May 2026 Challenge.
+  
+### Developed for the PromptWars May 2026 Challenge.
