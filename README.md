@@ -52,8 +52,6 @@ The app follows an Agentic Retrieval-Augmented Generation (RAG) pattern. Unlike 
 **Identity & Access Management (IAM):** Uses least-privilege principles, allowing the Cloud Run service account to access only the necessary secrets and storage buckets.
 
 **Environment Isolation:** Differentiates between build-time variables and runtime secrets to maintain a secure deployment pipeline.
-  
 
-Bash
-gcloud beta run deploy electoral-intelligence --add-volume=name=db,type=cloud-storage,bucket=[BUCKET_NAME] --add-volume-mount=volume=db,mount-path=/mnt/vector_storage
+---  
 Developed for the PromptWars May 2026 Challenge.
