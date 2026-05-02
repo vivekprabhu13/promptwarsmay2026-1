@@ -1,0 +1,90 @@
+{
+  "Chief Election Commissioner and Election Commissioner": [
+    {
+      "name": "Shri Gyanesh Kumar",
+      "designation": "Chief Election Commissioner",
+      "email": "cec@eci.gov.in",
+      "phones": ["23052323", "23052424"],
+      "fax": "23052249",
+      "staff": [
+        {"name": "Sh. Chandramouli Allaboina", "designation": "PPS", "intercom": "302"},
+        {"name": "Mr. Prince Rai", "designation": "PS", "intercom": "303"},
+        {"name": "Sh. Aman Gupta", "designation": "PS", "intercom": "301"},
+        {"name": "Sh. Himanshu Tyagi", "designation": "PA", "intercom": "304"}
+      ]
+    },
+    {
+      "name": "Dr. Sukhbir Singh Sandhu",
+      "designation": "Election Commissioner",
+      "email": "ecsss@eci.gov.in",
+      "phones": ["23052137", "23052138"],
+      "staff": [
+        {"name": "Mr. Abhishek Kumar Anand", "designation": "PPS", "intercom": "305"},
+        {"name": "Mr. Prateek Adlakha", "designation": "PS", "intercom": "428"},
+        {"name": "Ms. Pooja Handa", "designation": "PA", "intercom": "428"},
+        {"name": "Sh. Rahul Kumar", "designation": "ASO", "intercom": "362"}
+      ]
+    },
+    {
+      "name": "Dr. Vivek Joshi",
+      "designation": "Election Commissioner",
+      "email": "ecvj@eci.gov.in",
+      "phones": ["23052132", "23052134"],
+      "staff": [
+        {"name": "Mr. Amit Kumar Kumra", "designation": "Sr. PPS", "intercom": "201"},
+        {"name": "Mr. Paras Bhatia", "designation": "PS", "intercom": "319"},
+        {"name": "Mr. Mahesh", "designation": "PS", "intercom": "216"}
+      ]
+    }
+  ],
+  "Deputy Election Commissioner and Director General": [
+    {
+      "name": "Sh. RAKESH KUMAR VERMA",
+      "designation": "Director General (IIIDEM)",
+      "email": "election@eci.gov.in",
+      "phones": ["28031663"],
+      "staff": [
+        {"name": "Sh. Sanjay Adlakha", "designation": "PSO"},
+        {"name": "Ms. Anita Kataria", "designation": "PPS"}
+      ]
+    },
+    {
+      "name": "Sh. Maneesh Garg",
+      "designation": "Senior Deputy Election Commissioner",
+      "email": "election@eci.gov.in",
+      "phones": ["23052157", "23052234"],
+      "staff": [
+        {"name": "Sh. Atulya Neeraj", "designation": "PSO", "intercom": "529, 530"},
+        {"name": "Sh. Irfanuddin", "designation": "PS", "intercom": "529, 530"}
+      ]
+    },
+    {
+      "name": "Sh. Ashish Goyal",
+      "designation": "Director General (Media)",
+      "email": "election@eci.gov.in",
+      "phones": ["23052023", "23052024"],
+      "staff": [
+        {"name": "Rajesh Arora", "designation": "PSO", "intercom": "306"},
+        {"name": "Suraj Bhan", "designation": "PPS", "intercom": "232"}
+      ]
+    },
+    {
+      "name": "Dr. Seema Khanna",
+      "designation": "Director General (IT)",
+      "email": "election@eci.gov.in",
+      "phones": ["23052114"]
+    }
+  ],
+  "Secretariat of Election Commission of India": [
+    {"name": "Sh. S.B. Joshi", "designation": "Principal Secretary", "phones": ["23052242"], "intercom": "550"},
+    {"name": "Sh. Malay Mallick", "designation": "Principal Secretary", "phones": ["23052058"], "intercom": "565"},
+    {"name": "Sh. Suman Kumar Das", "designation": "Secretary", "phones": ["23052082"], "intercom": "283"},
+    {"name": "Sh. Rajiv Ranjan", "designation": "Secretary", "phones": ["25303430"], "intercom": "478"},
+    {"name": "Sh. Amit Kumar", "designation": "Secretary", "phones": ["23052097"], "intercom": "300"}
+  ],
+  "Chief Advisor / Advisor / Consultant": [
+    {"name": "Sh. Narendra N. Butolia", "designation": "Advisor", "phones": ["22052016"], "intercom": "308"},
+    {"name": "Sh. Sumit Mukherjee", "designation": "Advisor", "phones": ["23052246"], "intercom": "268", "fax": "23052001"},
+    {"name": "Sh. Vipin Katara", "designation": "Consultant", "phones": ["23052005"], "intercom": "248"}
+  ]
+}
