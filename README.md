@@ -1,57 +1,44 @@
-# Electoral Intelligence
-## Empowering Voters through Agentic RAG and AI-Driven Civic Guidance.
+# Electoral Intelligence - India
 
-## 📖 Overview
-Electoral Intelligence is an AI-powered assistant designed to simplify the complexities of the Indian electoral process. By leveraging the **Agentic RAG**, the app provides real-time, accurate answers regarding voter registration, polling booth locations, and legal requirements, sourced directly from official Election Commission of India (ECI) documentation.
+A high-precision, non-partisan AI assistant designed to guide citizens through the complexities of the Indian electoral process with clarity and accuracy.
 
-## 🛠️ Tech Implementation
-The solution is built on a modern, serverless, and agentic architecture:
+## 🎯 Function
+Electoral Intelligence serves as a digital companion for voters, simplifying the journey from registration to the polling booth. It provides instant, grounded answers to queries regarding:
+- **Voter Registration** (Form 6, 6A)
+- **Modifications & Shifting** (Form 8)
+- **Deletions & Objections** (Form 7)
+- **Polling Day Logistics** (ID requirements, EVM process, and location finding)
 
-**Frontend:** React with Vite and Tailwind CSS for a responsive, high-speed user interface.
+## 🧠 Approach and Logic
+The application operates on a **"Civic-First"** logic, prioritizing official documentation as the absolute source of truth.
+- **Categorization Engine**: Automatically routes user queries into Registration, Modification, or Logistics workflows.
+- **Qualifying Date Awareness**: Proactively educates users on the four qualifying dates (Jan 1, April 1, July 1, Oct 1) for eligibility.
+- **Wait-Time Logic**: Emphasizes that possessing an EPIC (Voter ID) is a necessary but insufficient condition; verifying presence in the Electoral Roll is mandatory.
 
-**Backend:** FastAPI (Python) hosted on Google Cloud Run, providing a stateless, scalable API layer.
+## 🛠️ How it Works
+The solution provides a dual-interface experience:
+1. **Interactive AI Agent**: A conversational interface where users can ask complex questions and receive cited, simplified answers based on ECI Handbooks.
+2. **Scenario Dashboard**: A structured directory of common use cases (First-time voter, NRI, Lost ID, PwD marking) providing instant checklists and process notes.
 
-**AI Engine:** Google Gemini (via Generative Language API) utilizing Secret Manager for secure API key handling.
+## 🌍 Real-World Use
+- **New Voters**: Helps youth understand exactly which documents are needed for Form 6.
+- **Migrants**: Simplifies the process of shifting constituencies using Form 8.
+- **Inclusive Voting**: Guides Persons with Disabilities (PwD) on marking themselves for priority services.
+- **Election Day Readiness**: Provides a "Practice Booth" and checklist to ensure voters don't get turned away for missing ID or registration errors.
 
-**Knowledge Base:** ChromaDB used as a local vector database, persisted via a Google Cloud Storage (GCS) FUSE mount to ensure data survives container restarts.
+## 🤖 AI Utilization
+- **Gemini 2.5 Flash**: Leveraged for high-speed, accurate natural language processing.
+- **Grounded Persona**: The AI is strictly constrained to a non-partisan persona, preventing political speculation or bias.
+- **Contextual Injection**: The agent uses a specialized prompt engineering layer that injects specific ECI guidelines and standard operating procedures into the conversation flow.
 
-**Agentic Framework:** Built using Antigravity, utilizing its built-in browser tools to index live URLs and PDF handbooks.
+## 💻 Tech Implementation
+- **Frontend**: Built with **React** and **Vite** for a modern, responsive user experience.
+- **Styling**: **Tailwind CSS** for a premium, glassmorphic UI design.
+- **API Integration**: Secure implementation using the `@google/generative-ai` SDK with **Lazy Initialization** to handle environment variables safely.
+- **Deployment**: Containerized using **Docker** and deployed on **Google Cloud Run**.
+- **Security & CI/CD**: 
+  - **Google Secret Manager** stores the Gemini API key.
+  - **Google Cloud Build** injects secrets during the build phase to ensure they are baked securely into the production bundle without being exposed in the repository.
 
-## 🧠 Approach & Logic
-The app follows an Agentic Retrieval-Augmented Generation (RAG) pattern. Unlike standard chatbots that rely on static training data, Electoral Intelligence operates with the following logic:
-
-**Dynamic Indexing:** The agent uses an automated browser to crawl verified ECI websites and digest PDF manuals into a vector store.
-
-**Contextual Retrieval:** When a user asks a question, the system performs a semantic search within the vector database to find the most relevant "chunks" of election law or procedure.
-
-**Grounded Response:** The AI synthesizes an answer only based on the retrieved snippets, ensuring the information is "grounded" in official sources and reducing the risk of hallucinations.
-
-**Security-First Design:** Sensitive credentials are never exposed to the frontend; all LLM calls are routed through the backend where keys are managed by Secret Manager.
-
-## 🚀 How the Solution Works
-**Ingestion:** You provide the URL (e.g., voters.eci.gov.in) or upload the ECI handbook PDF.
-
-**Processing:** The app "shreds" this information into mathematical embeddings.
-
-**Interaction:** A user asks, "How do I apply for Form 6 as an NRI?"
-
-**Inference:** The backend identifies the specific requirements for Form 6A from the database and returns a step-by-step guide tailored to the user's query.
-
-## 🌍 Real-World Use Cases
-**First-Time Voters:** Navigating the registration hurdles and understanding which forms are required for their specific situation.
-
-**Civic Education:** Acting as a 24/7 digital concierge for NGOs and civic groups during election cycles.
-
-**Correction Assistance:** Helping users understand the exact documentation needed for name or address changes on their Voter ID.
-
-**Accessibility:** Translating complex legal jargon into simple, conversational language for the general public.
-
-## 🛡️ Security & Scalability
-**Cloud Run:** Ensures the app can handle a sudden surge in users during election weeks.
-
-
-
-**Identity & Access Management (IAM):** Uses least-privilege principles, allowing the Cloud Run service account to access only the necessary secrets and storage buckets.
-
-**Environment Isolation:** Differentiates between build-time variables and runtime secrets to maintain a secure deployment pipeline.
-
+---
+**National Voter's Service Helpline: 1950**
