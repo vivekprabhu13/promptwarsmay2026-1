@@ -55,5 +55,3 @@ The app follows an Agentic Retrieval-Augmented Generation (RAG) pattern. Unlike 
 
 **Environment Isolation:** Differentiates between build-time variables and runtime secrets to maintain a secure deployment pipeline.
 
-  
-**- Developed for the PromptWars May 2026 Challenge.**
