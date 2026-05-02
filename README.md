@@ -1,5 +1,5 @@
 # Electoral Intelligence
-# Empowering Voters through Agentic RAG and AI-Driven Civic Guidance.
+## Empowering Voters through Agentic RAG and AI-Driven Civic Guidance.
 
 ## 📖 Overview
 Electoral Intelligence is an AI-powered assistant designed to simplify the complexities of the Indian electoral process. By leveraging the **Agentic RAG**, the app provides real-time, accurate answers regarding voter registration, polling booth locations, and legal requirements, sourced directly from official Election Commission of India (ECI) documentation.
