@@ -49,6 +49,8 @@ The app follows an Agentic Retrieval-Augmented Generation (RAG) pattern. Unlike 
 ## 🛡️ Security & Scalability
 **Cloud Run:** Ensures the app can handle a sudden surge in users during election weeks.
 
+
+
 **Identity & Access Management (IAM):** Uses least-privilege principles, allowing the Cloud Run service account to access only the necessary secrets and storage buckets.
 
 **Environment Isolation:** Differentiates between build-time variables and runtime secrets to maintain a secure deployment pipeline.
